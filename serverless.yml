@@ -1,0 +1,13 @@
+service: hello-lambda
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: nodejs18.x
+
+plugins:
+  - serverless-offline
+
+functions:
+  function1:
+    handler: index.handler
